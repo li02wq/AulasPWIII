@@ -1,0 +1,24 @@
+<? php
+namespace  App \ Http \ Controllers ;
+use  Illuminate \ Http \ Request ;
+
+classe  FormController  extends  Controller
+{
+
+
+   índice de função  pública ( solicitação $ solicitação ) { 
+ 
+
+      $ nome = $ solicitação -> entrada ( 'nome' );
+      $ sobrenome = $ solicitação -> entrada ( 'sobrenome' );
+      $ email = $ request -> input ( 'email' );
+      $ senha = $ solicitação -> entrada ( 'senha' );        
+
+return  view ( 'form' , [ 'nome' => $ nome , 'sobrenome' => $ sobrenome , 'genero' => $ genero , 'email' => $ email , 'senha' => $ senha ]);
+
+    }
+
+show de função  pública () {
+        return  view ( 'dados' );
+    }
+}
